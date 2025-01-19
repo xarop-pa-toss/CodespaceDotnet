@@ -11,7 +11,7 @@ You can check if the project was added to the solution successfully with
 dotnet sln list
 ```
 
-Then go into it and open the Codespace on the folder itself
+Then go into it and open the Codespace on the folder itself (this is necessary for the debugger to work)
 ```bash
 cd ProjectName
 code .
@@ -24,3 +24,5 @@ dotnet run --project ProjectName.csproj
 ```
 
 You can now debug your project with F5 or by pressing the Play button on the top right!!
+
+I recommend you bookmark the main Codespace (the one that opens PROJECTS) to make it easier to go back to it.
