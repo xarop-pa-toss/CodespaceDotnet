@@ -14,7 +14,9 @@
 		"vscode": {
 			"settings": {},
 			"extensions": [
-				"streetsidesoftware.code-spell-checker"
+				"streetsidesoftware.code-spell-checker",
+				"ms-dotnettools.csdevkit",  // C# Dev Kit
+                "ms-dotnettools.csharp"    // C# (OmniSharp) for additional features
 			]
 		}
 	},
@@ -29,13 +31,14 @@
 		"5001": {
 			"protocol": "https"
 		}
-	}
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [5000, 5001],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "dotnet restore",
+	"postCreateCommand": "dotnet restore",
+	"workspaceFolder": "/workspaces/PROJECTS"
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
